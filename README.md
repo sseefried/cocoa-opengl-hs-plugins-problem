@@ -6,7 +6,7 @@ I am using Manuel Chakravarty's new [language-inline-c](https://github.com/mchak
 
 ## System requirements
 
-* GHC 7.6.3
+* GHC 7.6.3 or GHC 7.8.2
 * cabal-install version 1.20.0.1
 
 ## Installation

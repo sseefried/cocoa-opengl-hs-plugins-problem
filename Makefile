@@ -1,5 +1,5 @@
 HC      = ghc
-VER     = 7.6.3
+VER     = $(shell $(HC) --version | sed 's/.*\([0-9]\.[0-9][0-9]*\.[0-9][0-9]*\)/\1/')
 SRC     = src
 CC      = /usr/bin/cc
 CFLAGS  = -fobjc-arc -I$(shell $(HC) --print-libdir)/include -I$(SRC)
