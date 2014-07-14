@@ -63,7 +63,9 @@ objc_implementation [Typed 'loadPlugin] [cunit|
   NSLog(@"Application did finish launching!");
   self.effects = [NSMutableArray array];
   [self.effects addObject:[self newWindowAtX:100 andY:100]];
-//  NSLog(@"Plugin string: %@", loadPlugin());
+  // Commenting out the following line will cause the two OpenGL windows to open
+
+  NSLog(@"Plugin string: %@", loadPlugin());
   [self.effects addObject:[self newWindowAtX:300 andY:150]];
 }
 
