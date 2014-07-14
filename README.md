@@ -24,6 +24,9 @@ as a by-product of the compilation process. Cabal does not support compile depen
 
 ## Failure modes
 
+The first window, which is allocated and displayed before the plugin is loaded,
+displays just fine. The second one fails to initialise properly.
+
 It only seems to fail when I'm using one screen on my
 Macbook Pro Retina (Late 2013) model.
 
