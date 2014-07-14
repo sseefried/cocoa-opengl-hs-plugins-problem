@@ -1,2 +1,9 @@
 .cabal-sandbox/
 cabal.sandbox.config
+*.o
+*.hi
+*_objc.h
+*_objc.m
+*_stub.h
+PluginProblem
+PluginProblem.app/Contents/MacOS

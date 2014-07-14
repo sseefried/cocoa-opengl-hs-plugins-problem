@@ -4,9 +4,10 @@ This repository was created to illustrate a problem I'm having with displaying m
 
 I am using Manuel Chakravarty's new [language-inline-c](https://github.com/mchakravarty/language-c-inline) package.
 
-## System requirements
+## What it was tested on
 
-* GHC 7.6.3 or GHC 7.8.2
+* GHC 7.6.3 and GHC 7.8.2
+* Mac OS X 10.9.3
 * cabal-install version 1.20.0.1
 
 ## Installation

@@ -89,6 +89,10 @@ objc_implementation [Typed 'loadPlugin] [cunit|
   return window;
 }
 
+- (typename BOOL)applicationShouldTerminateAfterLastWindowClosed:(typename NSApplication *)theApplication {
+    return YES;
+}
+
 @end
 
 |]
