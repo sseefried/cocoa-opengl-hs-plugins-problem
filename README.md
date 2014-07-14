@@ -28,3 +28,20 @@ Macbook Pro Retina (Late 2013) model.
 
 When I have a second screen plugged the two OpenGL
 windows open fine!
+
+Open the Console app and check the logs for the program.
+You will see something like:
+
+    14/07/2014 4:53:27.655 pm PluginProblem[93394]: Application did finish launching!
+    14/07/2014 4:53:27.695 pm PluginProblem[93394]: init MyOpenGLView: <MyOpenGLView: 0x618000161140>
+    14/07/2014 4:53:28.166 pm PluginProblem[93394]: Plugin string: This is the plugin string
+    14/07/2014 4:53:28.517 pm PluginProblem[93394]: init MyOpenGLView: <MyOpenGLView: 0x6080001612c0>
+    14/07/2014 4:53:28.517 pm PluginProblem[93394]: invalid display
+    14/07/2014 4:53:28.518 pm PluginProblem[93394]: No OpenGL pixel format
+    14/07/2014 4:53:28.518 pm PluginProblem[93394]: dealloc MyOpenGLView: <MyOpenGLView: 0x6080001612c0>
+
+In particular the "invalid display" log message seems to be a byproduct of the
+call ```NSOpenGLPixelFormat *pf = [[NSOpenGLPixelFormat alloc] initWithAttributes:attrs];```
+which appears in ```MyOpenGLView.m```.
+
+If you comment out the line that loads the Haskell plugin then you do not get this problem.
